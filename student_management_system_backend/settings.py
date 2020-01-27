@@ -75,33 +75,33 @@ WSGI_APPLICATION = 'student_management_system_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-      'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'student_management_system',
-        'USER': 'root', # or root
-        'PASSWORD': 'LJ3YHdxcpL18h3DM',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-        },
-    }
-}
-
 # DATABASES = {
 #       'default': {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'student_management_system',
-#         'USER': 'user', # or root
-#         'PASSWORD': 'password',
-#         'HOST': 'db',
+#         'USER': 'root', # or root
+#         'PASSWORD': 'LJ3YHdxcpL18h3DM',
+#         'HOST': 'localhost',
 #         'PORT': '3306',
 #         'OPTIONS': {
 #             'charset': 'utf8mb4',
 #         },
-#       }
+#     }
 # }
+
+DATABASES = {
+      'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'student_management_system',
+        'USER': 'user', # or root
+        'PASSWORD': 'password',
+        'HOST': 'db',
+        'PORT': '3306',
+        'OPTIONS': {
+            'charset': 'utf8mb4',
+        },
+      }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
